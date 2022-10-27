@@ -3,7 +3,7 @@ body {
     box-sizing: border-box;
     max-height: 700px;
     height: 100vh;
-    /* overflow: hidden; */
+    overflow: hidden;
 }
 
 body {
@@ -88,11 +88,11 @@ div.card-slot {
 
  /* iphone 12 & 13 */
 @media only screen 
-and (orientation: landscape) 
     and (device-width: 375px) 
     and (device-height: 812px) 
     and (-webkit-device-pixel-ratio: 3) { 
       main {
+        margin-top: 30px;
         width: 300px;
         height: 700px;
       }
@@ -100,11 +100,11 @@ and (orientation: landscape)
 
     /* iphone 13& iphone 13pro */
     @media only screen 
-    and (orientation: landscape) 
     and (device-width: 390px) 
     and (device-height: 844px) 
     and (-webkit-device-pixel-ratio: 3) { 
         main {
+            margin-top: 30px;
             width: 300px;
             height: 700px;
           }
@@ -112,12 +112,34 @@ and (orientation: landscape)
 
     /* older iPhones (X, Xs, XR and 11 */
     @media only screen 
-    and (orientation: landscape) 
+    /* and (orientation: landscape)  */
     and (device-width: 414px) 
     and (device-height: 896px) 
     and (-webkit-device-pixel-ratio: 2) { 
         main {
+            margin-top: 30px;
             width: 350px;
             height: 750px;
           }
-}
+    }  
+        /* Iphone 11 pro max */
+    @media only screen 
+    and (device-width: 414px) 
+    and (device-height: 896px) 
+    and (-webkit-device-pixel-ratio: 3) { 
+        main {
+            margin-top: 30px;
+            width: 350px;
+            height: 750px;
+          }
+    }
+
+    /* For landscape layouts only */
+    @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
+        main {
+            margin-top: 30px;
+            width: 350px;
+        }
+  }
+
+

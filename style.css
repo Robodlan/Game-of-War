@@ -3,7 +3,7 @@ body {
     box-sizing: border-box;
     max-height: 700px;
     height: 100vh;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 
 body {
@@ -84,4 +84,40 @@ div.card-slot {
  
 .textEL {
     margin-bottom: 0;
+}
+
+ /* iphone 12 & 13 */
+@media only screen 
+and (orientation: landscape) 
+    and (device-width: 375px) 
+    and (device-height: 812px) 
+    and (-webkit-device-pixel-ratio: 3) { 
+      main {
+        width: 300px;
+        height: 700px;
+      }
+    }
+
+    /* iphone 13& iphone 13pro */
+    @media only screen 
+    and (orientation: landscape) 
+    and (device-width: 390px) 
+    and (device-height: 844px) 
+    and (-webkit-device-pixel-ratio: 3) { 
+        main {
+            width: 300px;
+            height: 700px;
+          }
+    }
+
+    /* older iPhones (X, Xs, XR and 11 */
+    @media only screen 
+    and (orientation: landscape) 
+    and (device-width: 414px) 
+    and (device-height: 896px) 
+    and (-webkit-device-pixel-ratio: 2) { 
+        main {
+            width: 350px;
+            height: 750px;
+          }
 }
